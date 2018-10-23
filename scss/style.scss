@@ -1,0 +1,339 @@
+/* @import 'base';
+
+$brand-color: hsl(326, 59%, 63%); */
+
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+.clearfix:after{
+    content:"";
+    display: block;
+    clear: both;  /* adding a clearfix for all the floats */
+  }
+.logo-home {
+    background-image: url(../../images/IMG_1397wLogo.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    max-width:100%;
+    height:130px;
+    @media all and (min-width: 560px) {
+        height: 480px;
+    }
+}
+.logo-about {
+    background-image: url(../../images/030Edit.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width:100%;
+    height: 120px;
+    @media all and (min-width: 560px) {
+        height: 480px;
+    }
+}
+.logo-contact {
+    background-image: url(../../images/IMG_1907Edit.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width:100%;
+    height: 130px;
+    @media all and (min-width: 560px) {
+        height: 480px;
+    }
+}
+.navbar .nav {
+  display: block;
+  width: 100%;
+  height: auto;
+  @media all and (min-width: 560px) {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to right, rgba(216, 106, 169, 0.65), #D86AA9) !important;
+}
+  .menu-item {
+    border-bottom: 1px solid white;
+    // color:white;
+    width: 100%;
+    display: block;
+    padding: 15px 0;
+    justify-content: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, rgba(216, 106, 169, 0.65), #D86AA9) !important;
+    z-index: 100;
+    text-align: center;
+    @media all and (min-width: 560px) {
+        background-image: linear-gradient(to right, rgba(216, 106, 169, 0.0), rgba(216, 104, 168, 0.0)) !important;
+    }
+    a {
+        font-size: 25px;
+        text-decoration: none;
+        color: white;
+    } 
+  }
+  .active {
+      a {
+          color: #AD3A6A;
+      }
+  }
+}
+
+
+.bottom ul li a {
+    background:none;
+    color: #AD3A6A;        /* making the bottom navigation different from the main one at the top */
+    justify-content: center;
+}
+
+body {
+    // background-color: hsl(326, 59%, 63%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 100%;
+    line-height: 2.3rem;
+    margin: 0;
+    padding: 0;
+  }
+
+.about-main {
+    width: 100%;
+    background-color: rgba(216, 106, 169, 0.35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .about {
+        width: 100%;
+        padding: 10px;
+        @media all and (min-width: 560px) {
+            width: 50%;
+        }
+        
+        img {
+            width: 100%;
+            margin-top: 10px;
+            border: 7px solid #AD3A6A;
+            @media all and (min-width: 560px) {
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+    }
+    .story {
+        padding: 15px; 
+        @media all and (min-width: 560px) {
+            width: 50%;
+        }
+        h1, p {
+            @media all and (min-width: 560px) {
+                width: 100%;
+                padding: 15px;
+                color: #AD3A6A;
+            }
+        }
+    }
+    
+} 
+  
+
+  .table-wrap{
+    align-content: center;
+}
+caption{
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+table{
+    margin:20px 0;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid;
+    padding:10px 20px;    /* creating a table box look */
+}
+tbody tr:nth-child(odd){
+    background-color: turquoise; /* changing the colour of the rows so it's easier for the reader to associate the time with the specific day */
+}
+tbody tr:nth-child(even){
+    background-color: mediumpurple;
+}
+label{
+    display: block;
+    color: #AD3A6A;
+    text-align: left;
+    font-size: 20px;
+    padding: 0;
+    padding:10px 0;
+    font-size: 1.5rem;
+}
+input{
+    display:block;
+    padding:5px;
+    width:100%;  
+    margin-bottom: 10px; /* styling the labels and input bars to look more visually appealing */     
+}
+.last{
+    padding: 10px;
+    background-color: rgba(216, 106, 169, 0.35);
+    @media all and (min-width: 560px) {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .form-contain {
+        @media all and (min-width: 560px) {
+            width: 50%;
+            padding: 25px;
+        }
+    }
+    .map {
+        @media all and (min-width: 560px) {
+            width: 50%;
+            height: 500px;
+            padding: 25px;
+        }
+        iframe{
+            width: 100%;
+            height: 100%;
+            margin-top: 15px;
+            
+            
+        }
+    }
+}
+.message{
+    height: 100px;
+}
+.button{
+    padding:8px;
+}
+button{
+    margin:5px;
+    padding:5px 10px; /* submit and reset buttons */
+}
+
+
+
+section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgba(216, 106, 169, 0.35);
+    @media all and (min-width: 560px) {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    div {
+        text-align: center;
+        font-size: 30px;
+        padding: 15px 0;
+        width:100%;
+        color: #AD3A6A;
+        font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+        @media all and (min-width: 560px) {
+            text-align: left;
+            width: 70%;
+        }
+    }
+    .pictures {
+        @media all and (min-width: 560px) {
+            width: 80%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .categories {
+            width: 100%;
+            padding: 80px;
+            @media all and (min-width: 560px) {
+                width: calc(100% / 2);
+            }
+            img {
+                width: 100%;
+                border: 7px solid #AD3A6A;
+            }
+            .text {
+                @media all and (min-width: 560px) {
+                    width: 100%;
+                }
+            }
+          }
+    }
+    
+}
+h1, {
+    margin: 0;
+    font-size: 40px;
+    padding: 22px 0;
+    color: #AD3A6A;
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+footer {
+    width: 100%;
+    background-color: rgba(216, 106, 169, 0.35);
+    @media all and (min-width: 560px) {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row-reverse;
+        background-image: linear-gradient(to right, rgba(216, 106, 169, 0.65), #D86AA9);
+        
+    }
+    .bottom {  
+        @media all and (min-width: 560px) {
+            width: 25%;
+        }      
+            ul {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                @media all and (min-width: 560px) {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    list-style: none;
+                    li {
+                        a{
+                            @media all and (min-width: 560px) {
+                               color: white;
+                               text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+        .top {
+            text-align: center;
+            font-size: 10px;
+            padding: 22px 0;
+            color: #AD3A6A;
+            font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+            @media all and (min-width: 560px) {
+                width: calc(100% / 3);
+            }
+            a {
+                @media all and (min-width: 560px) {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+           
+        }
+    }
+    p {
+        margin: 0;
+        @media all and (min-width: 560px) {
+            width: calc(100% / 3);
+            padding: 0 50px;
+            color: white;
+        }
+    }

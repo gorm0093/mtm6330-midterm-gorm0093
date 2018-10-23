@@ -1,0 +1,379 @@
+/* @import 'base';
+
+$brand-color: hsl(326, 59%, 63%); */
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  /* adding a clearfix for all the floats */
+}
+
+.logo-home {
+  background-image: url(../../images/IMG_1397wLogo.jpg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 130px;
+}
+@media all and (min-width: 560px) {
+  .logo-home {
+    height: 480px;
+  }
+}
+
+.logo-about {
+  background-image: url(../../images/030Edit.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 120px;
+}
+@media all and (min-width: 560px) {
+  .logo-about {
+    height: 480px;
+  }
+}
+
+.logo-contact {
+  background-image: url(../../images/IMG_1907Edit.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 130px;
+}
+@media all and (min-width: 560px) {
+  .logo-contact {
+    height: 480px;
+  }
+}
+
+.navbar .nav {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media all and (min-width: 560px) {
+  .navbar .nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to right, rgba(216, 106, 169, 0.65), #D86AA9) !important;
+  }
+}
+.navbar .nav .menu-item {
+  border-bottom: 1px solid white;
+  width: 100%;
+  display: block;
+  padding: 15px 0;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, rgba(216, 106, 169, 0.65), #D86AA9) !important;
+  z-index: 100;
+  text-align: center;
+}
+@media all and (min-width: 560px) {
+  .navbar .nav .menu-item {
+    background-image: linear-gradient(to right, rgba(216, 106, 169, 0), rgba(216, 104, 168, 0)) !important;
+  }
+}
+.navbar .nav .menu-item a {
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+.navbar .nav .active a {
+  color: #AD3A6A;
+}
+
+.bottom ul li a {
+  background: none;
+  color: #AD3A6A;
+  /* making the bottom navigation different from the main one at the top */
+  justify-content: center;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 100%;
+  line-height: 2.3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.about-main {
+  width: 100%;
+  background-color: rgba(216, 106, 169, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-main .about {
+  width: 100%;
+  padding: 10px;
+}
+@media all and (min-width: 560px) {
+  .about-main .about {
+    width: 50%;
+  }
+}
+.about-main .about img {
+  width: 100%;
+  margin-top: 10px;
+  border: 7px solid #AD3A6A;
+}
+@media all and (min-width: 560px) {
+  .about-main .about img {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+.about-main .story {
+  padding: 15px;
+}
+@media all and (min-width: 560px) {
+  .about-main .story {
+    width: 50%;
+  }
+}
+@media all and (min-width: 560px) {
+  .about-main .story h1, .about-main .story p {
+    width: 100%;
+    padding: 15px;
+    color: #AD3A6A;
+  }
+}
+
+.table-wrap {
+  align-content: center;
+}
+
+caption {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+table {
+  margin: 20px 0;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid;
+  padding: 10px 20px;
+  /* creating a table box look */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: turquoise;
+  /* changing the colour of the rows so it's easier for the reader to associate the time with the specific day */
+}
+
+tbody tr:nth-child(even) {
+  background-color: mediumpurple;
+}
+
+label {
+  display: block;
+  color: #AD3A6A;
+  text-align: left;
+  font-size: 20px;
+  padding: 0;
+  padding: 10px 0;
+  font-size: 1.5rem;
+}
+
+input {
+  display: block;
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  /* styling the labels and input bars to look more visually appealing */
+}
+
+.last {
+  padding: 10px;
+  background-color: rgba(216, 106, 169, 0.35);
+}
+@media all and (min-width: 560px) {
+  .last {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media all and (min-width: 560px) {
+  .last .form-contain {
+    width: 50%;
+    padding: 25px;
+  }
+}
+@media all and (min-width: 560px) {
+  .last .map {
+    width: 50%;
+    height: 500px;
+    padding: 25px;
+  }
+}
+.last .map iframe {
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+}
+
+.message {
+  height: 100px;
+}
+
+.button {
+  padding: 8px;
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+  /* submit and reset buttons */
+}
+
+section {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: rgba(216, 106, 169, 0.35);
+}
+@media all and (min-width: 560px) {
+  section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+section div {
+  text-align: center;
+  font-size: 30px;
+  padding: 15px 0;
+  width: 100%;
+  color: #AD3A6A;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+@media all and (min-width: 560px) {
+  section div {
+    text-align: left;
+    width: 70%;
+  }
+}
+@media all and (min-width: 560px) {
+  section .pictures {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+section .pictures .categories {
+  width: 100%;
+  padding: 80px;
+}
+@media all and (min-width: 560px) {
+  section .pictures .categories {
+    width: calc(100% / 2);
+  }
+}
+section .pictures .categories img {
+  width: 100%;
+  border: 7px solid #AD3A6A;
+}
+@media all and (min-width: 560px) {
+  section .pictures .categories .text {
+    width: 100%;
+  }
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+  padding: 22px 0;
+  color: #AD3A6A;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+
+footer {
+  width: 100%;
+  background-color: rgba(216, 106, 169, 0.35);
+}
+@media all and (min-width: 560px) {
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-image: linear-gradient(to right, rgba(216, 106, 169, 0.65), #D86AA9);
+  }
+}
+@media all and (min-width: 560px) {
+  footer .bottom {
+    width: 25%;
+  }
+}
+footer .bottom ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+@media all and (min-width: 560px) {
+  footer .bottom ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+  }
+}
+@media all and (min-width: 560px) and (min-width: 560px) {
+  footer .bottom ul li a {
+    color: white;
+    text-decoration: none;
+  }
+}
+footer .top {
+  text-align: center;
+  font-size: 10px;
+  padding: 22px 0;
+  color: #AD3A6A;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+@media all and (min-width: 560px) {
+  footer .top {
+    width: calc(100% / 3);
+  }
+}
+@media all and (min-width: 560px) {
+  footer .top a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+p {
+  margin: 0;
+}
+@media all and (min-width: 560px) {
+  p {
+    width: calc(100% / 3);
+    padding: 0 50px;
+    color: white;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
